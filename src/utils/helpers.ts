@@ -133,16 +133,16 @@ export function validateImageOptions(
   height?: number,
   batchSize?: number
 ): void {
-  if (width && (width < 384 || width > 1024 || width % 8 !== 0)) {
+  if (width && (width < 384 || width > 1360 || width % 8 !== 0)) {
     throw new ReveAIError(
-      'Width must be between 384 and 1024 and be divisible by 8',
+      'Width must be between 384 and 1360 and be divisible by 8',
       ReveAIErrorType.GENERATION_ERROR
     );
   }
   
-  if (height && (height < 384 || height > 1024 || height % 8 !== 0)) {
+  if (height && (height < 384 || height > 1360 || height % 8 !== 0)) {
     throw new ReveAIError(
-      'Height must be between 384 and 1024 and be divisible by 8',
+      'Height must be between 384 and 1360 and be divisible by 8',
       ReveAIErrorType.GENERATION_ERROR
     );
   }
