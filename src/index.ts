@@ -320,7 +320,7 @@ export class ReveAI {
     const width = options.width || 1024;
     const height = options.height || 1024;
     const seed = options.seed === undefined ? -1 : options.seed;
-    const model = options.model || 'text2image_v1/prod/20250325-2246';
+    const model = options.model || 'text2image_v1';
     const shouldEnhancePrompt = options.enhancePrompt ?? true;
 
     // Use the provided enhanced prompt or the original
